@@ -1,0 +1,1 @@
+export default function RestaurantList () { return (<div>asds</div>)}
