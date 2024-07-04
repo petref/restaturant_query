@@ -1,8 +1,8 @@
 type User implements Timestamps {
     id: ID!
-    name: string,
-    forename: string,
-    email: string,
+    name: String,
+    forename: String,
+    email: String,
     
      # Interface required
     createdAt: Date!

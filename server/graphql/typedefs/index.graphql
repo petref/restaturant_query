@@ -17,6 +17,6 @@ type Mutation {
   UpdateUser(id: ID!, book: UserCreateInput!): User!
 
   # Restaurant
-  createRestaurant(publisher: RestaurantCreateInput!): Publisher!
+  createRestaurant(publisher: RestaurantCreateInput!): Restaurant!
   updateRestaurant(id: ID!, publisher: RestaurantUpdateInput!): Restaurant!
 }

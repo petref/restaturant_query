@@ -1,9 +1,8 @@
-type User implements Timestamps {
+type Restaurant implements Timestamps {
     id: ID!
-    name: string,
-    forename: string,
-    address: string,
-    email: string,
+    name: String,
+    address: String,
+    email: String,
     
      # Interface required
     createdAt: Date!
