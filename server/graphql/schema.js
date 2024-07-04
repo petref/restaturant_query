@@ -1,6 +1,11 @@
 import { join } from 'path';
 import { readdirSync, readFileSync } from 'fs';
 import { makeExecutableSchema } from '@graphql-tools/schema';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const gqlFiles = readdirSync(join(__dirname, './typedefs'));
 
