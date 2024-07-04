@@ -1,0 +1,22 @@
+# Custom Scalars
+scalar Date
+
+type Query {
+  # User
+  users: [User]!
+  user(id: ID!): User
+
+  # Restaurant
+  restaurants: [Restaurant]!
+  restaurant(id: ID!): Restaurant
+}
+
+type Mutation {
+  # User
+  createUser(user: UserCreateInput!): User!
+  UpdateUser(id: ID!, book: UserCreateInput!): User!
+
+  # Restaurant
+  createRestaurant(publisher: RestaurantCreateInput!): Publisher!
+  updateRestaurant(id: ID!, publisher: RestaurantUpdateInput!): Restaurant!
+}

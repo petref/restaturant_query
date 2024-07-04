@@ -1,0 +1,19 @@
+type User implements Timestamps {
+    id: ID!
+    name: string,
+    forename: string,
+    email: string,
+    
+     # Interface required
+    createdAt: Date!
+    updatedAt: Date!
+}
+
+# Inputs
+input UserCreateInput {
+  name: String!
+}
+
+input UserUpdateInput {
+  name: String
+}
