@@ -5,7 +5,7 @@ const start = async () => {
     app.listen(port);
     console.log(`server running at port: ${port}`);
   } catch {
-    console.log('Not able to run server');
+    console.log("Not able to run server");
   }
 };
 
